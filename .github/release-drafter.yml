@@ -1,4 +1,6 @@
 template: |
+  **MCOS** DNS plugin (`ghcr.io/muthur-command/mcio-dns`, **`io.mcio.*`** labels). See **README.md**.
+
   ## What's Changed
 
   $CHANGES

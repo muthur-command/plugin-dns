@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/base:3.23-2026.03.1
+ARG BUILD_FROM=ghcr.io/muthur-command/base:3.23
 
 FROM golang:1.25.7-alpine3.23 AS builder
 
@@ -45,10 +45,10 @@ COPY --from=builder /usr/src/coredns/coredns /usr/bin/coredns
 COPY rootfs /
 
 LABEL \
-    io.hass.type="dns" \
-    org.opencontainers.image.title="Home Assistant DNS Plugin" \
-    org.opencontainers.image.description="Home Assistant Supervisor plugin for DNS" \
-    org.opencontainers.image.authors="The Home Assistant Authors" \
-    org.opencontainers.image.url="https://www.home-assistant.io/" \
-    org.opencontainers.image.documentation="https://www.home-assistant.io/docs/" \
+    io.mcio.type="dns" \
+    org.opencontainers.image.title="MCOS DNS plugin (CoreDNS)" \
+    org.opencontainers.image.description="Supervisor-managed DNS plugin container for MCOS" \
+    org.opencontainers.image.authors="muthur-command (fork; upstream copyright in LICENSE)" \
+    org.opencontainers.image.url="https://github.com/muthur-command/plugin-dns" \
+    org.opencontainers.image.documentation="https://github.com/muthur-command/plugin-dns" \
     org.opencontainers.image.licenses="Apache License 2.0"

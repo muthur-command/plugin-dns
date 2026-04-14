@@ -1,3 +1,11 @@
-# Home Assistant CoreDNS plugin
+# MCOS DNS plugin (CoreDNS)
 
-This is for HassOS and is the login shell for supervised systems.
+中文文档: [`README.zh-CN.md`](./README.zh-CN.md)
+
+Supervisor-managed **DNS** add-on for **MCOS**.
+
+Built on **`ghcr.io/muthur-command/base`**; OCI labels use **`io.mcio.*`**.
+
+## License
+
+See **LICENSE** (Apache-2.0; retain upstream copyright / NOTICE where required).

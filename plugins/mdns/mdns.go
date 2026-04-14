@@ -48,7 +48,7 @@ func (m MDNS) AddARecord(msg *dns.Msg, state *request.Request, name string, addr
 			aheader := dns.RR_Header{Name: name, Rrtype: dns.TypeA, Class: dns.ClassINET, Ttl: 60}
 
 			if ip.Mask(net.CIDRMask(23, 32)).Equal(net.IPv4(172, 30, 32, 0)) {
-				// Prefer an address within hassio network if one is returned by inserting at front
+				// Prefer an address on the supervisor / add-on Docker network when returned (insert at front)
 				msg.Answer = insertAnAnswer(msg.Answer, &dns.A{Hdr: aheader, A: ip}, 0)
 				ifc_index = 1
 
