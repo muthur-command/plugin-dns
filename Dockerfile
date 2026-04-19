@@ -46,8 +46,8 @@ COPY rootfs /
 
 LABEL \
     io.mcio.type="dns" \
-    org.opencontainers.image.title="MCOS DNS plugin (CoreDNS)" \
-    org.opencontainers.image.description="Supervisor-managed DNS plugin container for MCOS" \
+    org.opencontainers.image.title="Muthur Command OS DNS plugin (CoreDNS)" \
+    org.opencontainers.image.description="Supervisor-managed DNS plugin container for Muthur Command OS" \
     org.opencontainers.image.authors="muthur-command (fork; upstream copyright in LICENSE)" \
     org.opencontainers.image.url="https://github.com/muthur-command/plugin-dns" \
     org.opencontainers.image.documentation="https://github.com/muthur-command/plugin-dns" \
