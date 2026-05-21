@@ -2,6 +2,11 @@ name: Build plugin
 
 on:
   workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish images to registry and update version repo"
+        type: boolean
+        default: true
   pull_request:
     branches: ["mc"]
   release:
