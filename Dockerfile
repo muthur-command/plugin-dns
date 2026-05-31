@@ -45,7 +45,7 @@ COPY --from=builder /usr/src/coredns/coredns /usr/bin/coredns
 COPY rootfs /
 
 LABEL \
-    io.mcio.type="dns" \
+    io.mcos.type="dns" \
     org.opencontainers.image.title="Muthur Command OS DNS plugin (CoreDNS)" \
     org.opencontainers.image.description="Supervisor-managed DNS plugin container for Muthur Command OS" \
     org.opencontainers.image.authors="muthur-command (fork; upstream copyright in LICENSE)" \

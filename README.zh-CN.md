@@ -4,7 +4,7 @@
 
 由 Supervisor 管理的 **DNS** 插件容器，面向 **Muthur Command OS**。
 
-基于 **`ghcr.io/muthur-command/base`** 构建；OCI 标签使用 **`io.mcio.*`**。
+基于 **`ghcr.io/muthur-command/base`** 构建；OCI 标签使用 **`io.mcos.*`**。
 
 Corefile 中仍保留与上游 Supervisor 栈兼容的解析名（如 `local.hass.io` / `hassio`）；与 **Muthur Command** 栈服务别名、迁移域名的对齐见 **P3《DNS 别名表》**（若适用）。
 

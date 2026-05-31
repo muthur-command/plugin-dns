@@ -4,7 +4,7 @@
 
 Supervisor-managed **DNS** add-on for **Muthur Command OS**.
 
-Built on **`ghcr.io/muthur-command/base`**; OCI labels use **`io.mcio.*`**.
+Built on **`ghcr.io/muthur-command/base`**; OCI labels use **`io.mcos.*`**.
 
 ## Origin
 

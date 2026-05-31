@@ -22,7 +22,7 @@ env:
   ARCHITECTURES: '["amd64", "aarch64"]'
   BUILD_NAME: dns
   BUILD_TYPE: plugin
-  IMAGE_NAME: mcio-dns
+  IMAGE_NAME: mcos-dns
 
 permissions:
   contents: read
