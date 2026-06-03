@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/muthur-command/base:3.23
+ARG BUILD_FROM=ghcr.io/muthur-command/base:3.23-2026.06.0
 
 FROM golang:1.25.7-alpine3.23 AS builder
 
